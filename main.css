@@ -1,0 +1,118 @@
+*{
+    font-family:  Poppins;
+    line-height: normal;
+    font-style: normal;
+    color: #000;
+}
+header{
+    margin: 1vh;
+    padding: 1vh;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+header > h1{
+    font-family: PT Serif;
+    font-size: 2.3em;
+    font-weight: 700;
+    letter-spacing: -1.62px;
+}
+.header-right{
+    position: relative;
+    top:10%;
+}
+.header-right  > h2{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.header-right > p{
+    width: 439px;
+    height: 87px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.main-content{
+    margin: 1vh;
+    display: grid;
+    grid-template:repeat(2,auto)/repeat(3,auto);
+    justify-content: center;
+    gap: 5%;
+    height: 90vh;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 30vh;
+}
+.card-left{
+    display: flex;
+    flex-direction: column;
+}
+.card-left > img{
+    width: 238px;
+    height: 300px;
+}
+.card-left > span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.card-right{
+    position: relative;
+    top:5%;
+}
+.dest {
+    width: 102px;
+    position: absolute;
+    left: -40px;
+    top:10%;
+    transform: rotate(90deg);
+    display: inline-block;
+}
+.Saba{
+    position: relative;
+    top:23%;
+}
+.Richard{
+    position: relative;
+    top:20%;
+}
+
+footer > p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 5vh;
+}
+
+@media (max-width :600px) {
+    header{
+        margin-top: 30%;
+        margin-bottom: 10%;
+        flex-direction: column;
+    }
+    .main-content{
+        grid-template:repeat(2,auto)/repeat(2,auto);
+        justify-content: center;
+        gap: 15%;
+        padding: 5%;
+    }
+    .Saba{
+        position: relative;
+        top:35%
+    }
+    .Lu{
+        position: relative;
+        top:35%
+    }
+    .Shae-Le{
+        position: relative;
+        top:35%
+    }
+    footer > p{
+        position: absolute;
+        bottom:-90%;
+        left:25%
+    }
+}
